@@ -2,7 +2,10 @@
   "permissions": {
     "allow": [
       "Bash(find . -maxdepth 3 -type f -name *.md -o -name *.json -o -name .claude*)",
-      "Bash(git config:*)"
+      "Bash(git config:*)",
+      "Bash(mv \"C:/Users/ronak/commandsP2P/.claude/commands/unit-economics.md\" \"C:/Users/ronak/commandsP2P/.claude/commands/startup/\")",
+      "Bash(mv \"C:/Users/ronak/commandsP2P/.claude/commands/regulatory-scan.md\" \"C:/Users/ronak/commandsP2P/.claude/commands/startup/\")",
+      "Bash(mv \"C:/Users/ronak/commandsP2P/.claude/commands/vibe-check.md\" \"C:/Users/ronak/commandsP2P/.claude/commands/vibe-tools/\")"
     ]
   },
   "enableAllProjectMcpServers": true,

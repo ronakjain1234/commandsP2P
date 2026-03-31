@@ -35,6 +35,9 @@ Maps what your app actually does (from code) against what your Terms of Service 
 
 Tools that give non-coders the instincts of a senior engineer — catching the problems you don't know to look for.
 
+### `/vibe-tools:who-can-do-what`
+Maps every page, API endpoint, and database operation to who's actually allowed to access it. Builds a full permission matrix across all user roles (guest, user, admin), flags unprotected API routes, finds places where user A can access user B's data by changing a URL, catches frontend-only "protection" that anyone can bypass, and identifies privilege escalation paths where a regular user could make themselves admin.
+
 ### `/vibe-tools:vibe-check`
 The health inspection for your app. Finds things that are silently broken, half-finished, or will break soon: dead routes, missing environment variables, forms that don't submit, broken imports, orphaned files, database mismatches, and missing error handling. Outputs a vibe score so you know if you're demo-ready or need to keep cooking.
 

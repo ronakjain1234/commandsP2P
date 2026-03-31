@@ -38,6 +38,9 @@ Simulates a VC firm's technical due diligence review. Evaluates your codebase ac
 
 Tools that give non-coders the instincts of a senior engineer — catching the problems you don't know to look for.
 
+### `/vibe-tools:what-if-it-fails`
+Finds every API call, database query, payment request, file upload, and external service call that has no backup plan when it fails. Traces the exact user impact for each — white screens, lost form data, infinite spinners, silent failures where the user thinks it worked but nothing saved. Checks for missing timeouts, missing retry logic, missing error boundaries, and missing fallbacks when entire services go down. Outputs a resilience score and the specific code to add for each fix.
+
 ### `/vibe-tools:who-can-do-what`
 Maps every page, API endpoint, and database operation to who's actually allowed to access it. Builds a full permission matrix across all user roles (guest, user, admin), flags unprotected API routes, finds places where user A can access user B's data by changing a URL, catches frontend-only "protection" that anyone can bypass, and identifies privilege escalation paths where a regular user could make themselves admin.
 

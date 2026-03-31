@@ -29,6 +29,9 @@ Scans every dependency in your project and classifies each license into SAFE, CA
 ### `/startup:tos-gap`
 Maps what your app actually does (from code) against what your Terms of Service and Privacy Policy actually cover. Discovers every data collection point, third-party data share, AI feature, payment flow, and user content type — then checks if your legal documents address each one. Flags gaps like "you send user data to OpenAI but your privacy policy doesn't mention AI" with the exact code that creates the legal obligation. Includes a UX audit of consent flows and a disclaimer that it's not legal advice.
 
+### `/startup:free-tier-farming`
+Thinks like someone who wants to use your product for free forever — and finds every loophole that lets them. Scans for account multiplication exploits (signup with email aliases, trial resets via cookie clearing), client-side-only usage limits anyone can bypass with DevTools, unprotected AI/API endpoints that let one user drain your budget, referral fraud loops, missing subscription revocation after failed payments, and unlimited file storage abuse. Estimates real dollar cost exposure per exploit and outputs a defense scorecard with a priority fix list.
+
 ### `/startup:investor-dd`
 Simulates a VC firm's technical due diligence review. Evaluates your codebase across 9 categories — contributor risk (bus factor), dependency health, test coverage, CI/CD maturity, code organization, database quality, security posture, documentation, and tech debt. Outputs a DD memo written in the voice of an investor's engineer, a scorecard with letter grade, and an investment recommendation (proceed / proceed with conditions / pass). Stage-aware — grades a pre-seed project differently than a Series A. Includes a founder action plan with quick wins to fix before your next investor meeting.
 

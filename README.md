@@ -20,6 +20,15 @@ Reads your actual codebase to build a real unit economics model. Scans for prici
 ### `/startup:regulatory-scan`
 Scans your codebase for compliance risks. Inventories every PII field in your database, audits every data collection point with file and line references, checks against GDPR, CCPA, COPPA, HIPAA, and SOC2, flags security red flags, and outputs a prioritized remediation plan with a compliance score.
 
+### `/startup:user-nightmare`
+Generates the worst-case user stories nobody plans for. Scans your actual code to find real failure modes across 8 categories: interrupted operations (phone dies mid-checkout), extreme volumes (10,000 items in cart), hostile input, timing and concurrency bugs (double-click submit), geography issues (payment provider doesn't work in user's country), account edge cases, device quirks, and financial nightmares. Every nightmare cites the exact file and line that would break, with severity, likelihood, and a prioritized fix list.
+
+### `/startup:license-audit`
+Scans every dependency in your project and classifies each license into SAFE, CAUTION, DANGER, or UNKNOWN tiers. Catches GPL and AGPL libraries that could force you to open-source your code, SSPL and BSL restrictions, copied source triggering copyleft, and transitive dependencies hiding dangerous licenses deep in your lock file. Outputs a fundraising impact score — because license issues blow up during VC due diligence and acquisitions, not before.
+
+### `/startup:tos-gap`
+Maps what your app actually does (from code) against what your Terms of Service and Privacy Policy actually cover. Discovers every data collection point, third-party data share, AI feature, payment flow, and user content type — then checks if your legal documents address each one. Flags gaps like "you send user data to OpenAI but your privacy policy doesn't mention AI" with the exact code that creates the legal obligation. Includes a UX audit of consent flows and a disclaimer that it's not legal advice.
+
 ---
 
 ## Vibe Tools Commands

@@ -41,6 +41,9 @@ Simulates a VC firm's technical due diligence review. Evaluates your codebase ac
 
 Tools that give non-coders the instincts of a senior engineer — catching the problems you don't know to look for.
 
+### `/vibe-tools:connect-me`
+Scans your tech stack and tells you exactly which MCP servers to connect to Claude Code. Detects your database, hosting, payments, auth, and every other service from your code, then recommends the MCPs that will save you the most time — ranked by daily impact. Tells you what's already connected, what to add immediately, and gives copy-paste setup instructions for each one. If you don't know what MCPs are, this command explains why they matter.
+
 ### `/vibe-tools:what-if-it-fails`
 Finds every API call, database query, payment request, file upload, and external service call that has no backup plan when it fails. Traces the exact user impact for each — white screens, lost form data, infinite spinners, silent failures where the user thinks it worked but nothing saved. Checks for missing timeouts, missing retry logic, missing error boundaries, and missing fallbacks when entire services go down. Outputs a resilience score and the specific code to add for each fix.
 
